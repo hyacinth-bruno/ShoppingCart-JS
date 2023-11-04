@@ -1,5 +1,15 @@
-import React from "react";
+import React from 'react';
+import ProductItem from "../product/ProductItem";
+import "./ProductList.css"
 
-export default function ProductList() {
-  return <div>ProductList</div>;
-}
+const ProductList = ({ products, onAddToCart }) => {
+  return (
+    <div className="product-item">
+      {products.map((product) => (
+        <ProductItem key={product.id} product={product} onAddToCart={onAddToCart} />
+      ))}
+    </div>
+  );
+};
+
+export default ProductList;

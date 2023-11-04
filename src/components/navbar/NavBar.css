@@ -1,0 +1,42 @@
+/* src/components/navbar/NavBar.css */
+.navbar {
+    background-color: #ffffff; /* white background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navbar-menu a {
+    margin: 0 1rem;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+
+  .navbar-logo {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* You might want to also adjust your navbar-brand to align items */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
