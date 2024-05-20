@@ -1,7 +1,7 @@
-/* src/components/navbar/NavBar.css */
+/* 
 .navbar {
-    background-color: #ffffff; /* white background */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
@@ -25,18 +25,43 @@
   }
   
   .navbar-menu a:hover {
-    color: #007bff; /* Highlight color on hover */
+    color: #007bff; 
   }
 
   .navbar-logo {
-    height: 60px; /* Adjust size as needed */
+    height: 60px; 
     width: auto;
     margin-right: 10px;
   }
   
-  /* You might want to also adjust your navbar-brand to align items */
+
   .navbar-brand {
     display: flex;
     align-items: center;
   }
+   */
+
+   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
   
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }  
+   

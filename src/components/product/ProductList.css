@@ -1,7 +1,7 @@
-/* src/components/product/ProductList.css */
+/* src/components/product/ProductList.css
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* responsive grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   grid-gap: 1rem;
   padding: 1rem;
 }
@@ -70,9 +70,9 @@
   
   .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid setup */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-template-columns: repeat(2, 1fr); 
 
   }
   
@@ -83,8 +83,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-between; /* Adjust content spacing */
-    height: 100%; /* Make sure all items have the same height */
+    justify-content: space-between; 
+    height: 100%; 
     align-items: center;
   }
   
@@ -93,9 +93,9 @@
     height: auto;
     transition: transform 0.3s ease;
     object-fit: contain;
-    width: 100%; /* Makes image take full width of the container */
-  max-height: 200px; /* Adjust the height as necessary */
-  object-fit: cover; /* Ensures the image covers the area, might crop */
+    width: 100%; 
+  max-height: 200px; 
+  object-fit: cover; 
   margin-bottom: 10px;
   }
   
@@ -103,5 +103,62 @@
     transform: scale(1.1);
   }
   
-  /* Rest of your styles... */
+ 
+   */
+
+
+
+   .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .product h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  
+  .product p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .product button {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    width: 80%;
+    align-self: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #0056b3;
+  }
   
